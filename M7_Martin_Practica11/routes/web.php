@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\controladorEjercicio1;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/ej1',[controladorEjercicio1::class, 'ej1Parametro']);
+
+Route::get('/ej12', [controladorEjercicio1::class, 'vista']);
+
