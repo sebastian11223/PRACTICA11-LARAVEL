@@ -22,5 +22,5 @@ Route::get('/ej1',[controladorEjercicio1::class, 'ej1Parametro']);
 
 Route::get('/ej12', [controladorEjercicio1::class, 'ej1Parametro']);
 
-Route::get('/parametros/{param1}', [controladorEjercicio1::class, 'vistaParametros']);
+Route::get('/parametros/{param1}/{param2?}/{param3?}/{param4?}', [controladorEjercicio1::class, 'vistaParametros']);
 
